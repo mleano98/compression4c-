@@ -14,14 +14,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        btMo {
-            bindings = <&mo 3>;
-            key-positions = <56 57>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         codeFence: codeFence {
@@ -82,6 +75,15 @@
 &trans  &trans  &trans  &trans       &trans   &trans    &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &bootloader  &trans                           &trans        &sys_reset    &trans        &trans        &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        AdjustLayer {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
