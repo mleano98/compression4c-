@@ -2,13 +2,18 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: compression
+      url-base: https://github.com/compressionKeyboards
 
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-
+    # Inject the missing keyboard shield / board source folder module
+    - name: compression4c
+      remote: compression
+      revision: main
+      import: true
   self:
     path: config
-
