@@ -5,9 +5,9 @@
 # the `include` property.
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: 4c_left nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: 4c_right nice_view
