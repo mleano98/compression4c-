@@ -2,19 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: compression
-      url-base: https://github.com
 
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: compression4c
-      remote: compression
-      revision: main
-    - name: 4c-zmk-layout
-      remote: compression
-      revision: main
+
   self:
     path: config
+
