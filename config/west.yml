@@ -1,11 +1,22 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url_base: https://github.com
+      url_base: https://github.com/zmkfirmware
+    - name: compression
+      url_base: https://github.com/compressionKeyboards
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+    # Repo 1: Pulls the core board hardware infrastructure 
+    - name: compression4c
+      remote: compression
+      revision: main
+    # Repo 2: Pulls the standalone ZMK shield configuration profiles
+    - name: 4c-zmk-layout
+      remote: compression
+      revision: main
   self:
     path: config
