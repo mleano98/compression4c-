@@ -1,11 +1,12 @@
 manifest:
   remotes:
-    - name: zmk
-      url-base: https://github.com/compressionKeyboards
+    - name: zmkfirmware
+      url_base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: zmk
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:
     path: config
+
