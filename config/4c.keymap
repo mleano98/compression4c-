@@ -19,7 +19,7 @@
             bindings = <&kp LEFT_WIN>;
             key-positions = <51 54>;
             layers = <0>;
-            timeout-ms = <0.5>;
+            timeout-ms = <50>; // Fixed decimal to integer
             require-prior-idle-ms = <1>;
         };
     };
@@ -28,17 +28,22 @@
         codeFence: codeFence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp GRAVE &kp GRAVE &kp GRAVE &kp RET &kp RET &kp GRAVE &kp GRAVE &kp GRAVE &kp UP>,
-                <&macro_press>;
+            tap-ms = <30>;  // Added mandatory ZMK 4.1 timing
+            wait-ms = <30>; // Added mandatory ZMK 4.1 timing
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp RET &kp RET &kp GRAVE &kp GRAVE &kp GRAVE &kp UP>; // Removed invalid trailing macro_press
         };
 
         alt_f4: alt_f4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            tap-ms = <30>;  // Added mandatory ZMK 4.1 timing
+            wait-ms = <30>; // Added mandatory ZMK 4.1 timing
             bindings = <&kp LALT &kp F4>;
         };
     };
+};
+
+
 
     keymap {
         compatible = "zmk,keymap";
