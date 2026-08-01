@@ -21,16 +21,17 @@
     };
 
     // 2. Added the physical_layouts block required by the ZMK 4.1 layout engine
-    physical_layouts {
+       physical_layouts {
         compatible = "zmk,physical-layouts";
         
         default_layout: default_layout {
             compatible = "zmk,physical-layout";
             display-name = "Default Layout";
-            transform = &default_transform;
-            kscan = &kscan0;
+            transform = <&default_transform>; // Added angle brackets
+            kscan = <&kscan0>;                 // Added angle brackets
         };
     };
+
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
