@@ -1,5 +1,5 @@
-config SHIELD_4C_LEFT
-    def_bool $(shields_list_contains,4c_left)
+config SHIELD_COMPRESSION4C_LEFT
+    def_bool $(shields_list_contains,compression4c_left)
 
-config SHIELD_4C_RIGHT
-    def_bool $(shields_list_contains,4c_right)
+config SHIELD_COMPRESSION4C_RIGHT
+    def_bool $(shields_list_contains,compression4c_right)
