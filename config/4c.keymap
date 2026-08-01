@@ -42,6 +42,8 @@
 
     keymap {
         compatible = "zmk,keymap";
+        // Tell ZMK Studio how to map this layout array
+        physical-layout = <&default_layout>;
 
         BASE {
             bindings = <
