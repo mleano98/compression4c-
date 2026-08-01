@@ -8,6 +8,7 @@ exposes: [i2c_oled]
 features:
   - keys
   - display
+  - studio # Added: Informs the ZMK Studio generator to process this map
 siblings:
   - "compression4c_left"
   - "compression4c_right"
