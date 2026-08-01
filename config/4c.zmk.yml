@@ -6,7 +6,81 @@ url: "https://github.com"
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
+  - keys
   - display
 siblings:
   - "4c_left"
   - "4c_right"
+layouts:
+  - id: "default_layout"
+    transform: "keymap_transform_0"
+    kscan: "kscan0"
+    keys:
+      # Left Half - Row 1
+      - { x: 0, y: 0 }
+      - { x: 1, y: 0 }
+      - { x: 2, y: 0 }
+      - { x: 3, y: 0 }
+      - { x: 4, y: 0 }
+      - { x: 5, y: 0 }
+      # Right Half - Row 1
+      - { x: 7, y: 0 }
+      - { x: 8, y: 0 }
+      - { x: 9, y: 0 }
+      - { x: 10, y: 0 }
+      - { x: 11, y: 0 }
+      - { x: 12, y: 0 }
+      # Left Half - Row 2
+      - { x: 0, y: 1 }
+      - { x: 1, y: 1 }
+      - { x: 2, y: 1 }
+      - { x: 3, y: 1 }
+      - { x: 4, y: 1 }
+      - { x: 5, y: 1 }
+      # Right Half - Row 2
+      - { x: 7, y: 1 }
+      - { x: 8, y: 1 }
+      - { x: 9, y: 1 }
+      - { x: 10, y: 1 }
+      - { x: 11, y: 1 }
+      - { x: 12, y: 1 }
+      # Left Half - Row 3
+      - { x: 0, y: 2 }
+      - { x: 1, y: 2 }
+      - { x: 2, y: 2 }
+      - { x: 3, y: 2 }
+      - { x: 4, y: 2 }
+      - { x: 5, y: 2 }
+      # Right Half - Row 3
+      - { x: 7, y: 2 }
+      - { x: 8, y: 2 }
+      - { x: 9, y: 2 }
+      - { x: 10, y: 2 }
+      - { x: 11, y: 2 }
+      - { x: 12, y: 2 }
+      # Left Half - Row 4
+      - { x: 0, y: 3 }
+      - { x: 1, y: 3 }
+      - { x: 2, y: 3 }
+      - { x: 3, y: 3 }
+      - { x: 4, y: 3 }
+      - { x: 5, y: 3 }
+      # Right Half - Row 4
+      - { x: 7, y: 3 }
+      - { x: 8, y: 3 }
+      - { x: 9, y: 3 }
+      - { x: 10, y: 3 }
+      - { x: 11, y: 3 }
+      - { x: 12, y: 3 }
+      # Left Half - Thumbs (Row 5)
+      - { x: 1, y: 4 }
+      - { x: 2, y: 4 }
+      - { x: 3, y: 4 }
+      - { x: 4, y: 4 }
+      - { x: 5, y: 4 }
+      # Right Half - Thumbs (Row 5)
+      - { x: 7, y: 4 }
+      - { x: 8, y: 4 }
+      - { x: 9, y: 4 }
+      - { x: 10, y: 4 }
+      - { x: 11, y: 4 }
