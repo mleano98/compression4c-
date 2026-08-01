@@ -1,9 +1,7 @@
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-
 
 / {
     combos {
@@ -16,10 +14,10 @@
         };
 
         gui_meta {
-            bindings = <&kp LEFT_WIN>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <51 54>;
             layers = <0>;
-            timeout-ms = <50>; // Fixed decimal to integer
+            timeout-ms = <50>;
             require-prior-idle-ms = <1>;
         };
     };
@@ -28,22 +26,19 @@
         codeFence: codeFence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <30>;  // Added mandatory ZMK 4.1 timing
-            wait-ms = <30>; // Added mandatory ZMK 4.1 timing
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp RET &kp RET &kp GRAVE &kp GRAVE &kp GRAVE &kp UP>; // Removed invalid trailing macro_press
+            tap-ms = <30>;
+            wait-ms = <30>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp RET &kp RET &kp GRAVE &kp GRAVE &kp GRAVE &kp UP>;
         };
 
         alt_f4: alt_f4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            tap-ms = <30>;  // Added mandatory ZMK 4.1 timing
-            wait-ms = <30>; // Added mandatory ZMK 4.1 timing
+            tap-ms = <30>;
+            wait-ms = <30>;
             bindings = <&kp LALT &kp F4>;
         };
     };
-};
-
-
 
     keymap {
         compatible = "zmk,keymap";
@@ -88,6 +83,4 @@
             >;
         };
     };
-
-    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
