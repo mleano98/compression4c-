@@ -1,4 +1,4 @@
-#include "4c.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include "../../../4c.dtsi"
 
 &kscan0 {
     col-gpios
