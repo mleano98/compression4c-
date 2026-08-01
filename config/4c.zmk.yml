@@ -13,5 +13,5 @@ siblings:
   - 4c_right
 layouts:
   - id: default_layout
-    transform: default_transform
+    transform: keymap_transform_0 # Fixed: Points directly to your DTS transform node label
     kscan: kscan0
