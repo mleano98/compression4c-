@@ -1,4 +1,4 @@
-#include "../../../4c.dtsi"
+#include "../../../compression4c.dtsi"
 
 &kscan0 {
     col-gpios
