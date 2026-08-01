@@ -2,7 +2,7 @@ file_format: "1"
 id: 4c
 name: 4c
 type: shield
-url: https://github.com/compressionKeboards/
+url: https://github.com
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
@@ -11,3 +11,7 @@ features:
 siblings:
   - 4c_left
   - 4c_right
+layouts:
+  - id: default_layout
+    transform: default_transform
+    kscan: kscan0
