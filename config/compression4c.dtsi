@@ -27,6 +27,72 @@
             display-name = "Default Layout";
             transform = <&keymap_transform_0>; // Point directly to the explicit node name
             kscan = <&kscan0>;
+            
+            // Required by ZMK Studio to resolve the BUILD_ASSERT error
+            keys
+                = <&keymap_transform_0 0 0>  // Row 0
+                , <&keymap_transform_0 0 1>
+                , <&keymap_transform_0 0 2>
+                , <&keymap_transform_0 0 3>
+                , <&keymap_transform_0 0 4>
+                , <&keymap_transform_0 0 5>
+                , <&keymap_transform_0 0 6>
+                , <&keymap_transform_0 0 7>
+                , <&keymap_transform_0 0 8>
+                , <&keymap_transform_0 0 9>
+                , <&keymap_transform_0 0 10>
+                , <&keymap_transform_0 0 11>
+                
+                , <&keymap_transform_0 1 0>  // Row 1
+                , <&keymap_transform_0 1 1>
+                , <&keymap_transform_0 1 2>
+                , <&keymap_transform_0 1 3>
+                , <&keymap_transform_0 1 4>
+                , <&keymap_transform_0 1 5>
+                , <&keymap_transform_0 1 6>
+                , <&keymap_transform_0 1 7>
+                , <&keymap_transform_0 1 8>
+                , <&keymap_transform_0 1 9>
+                , <&keymap_transform_0 1 10>
+                , <&keymap_transform_0 1 11>
+                
+                , <&keymap_transform_0 2 0>  // Row 2
+                , <&keymap_transform_0 2 1>
+                , <&keymap_transform_0 2 2>
+                , <&keymap_transform_0 2 3>
+                , <&keymap_transform_0 2 4>
+                , <&keymap_transform_0 2 5>
+                , <&keymap_transform_0 2 6>
+                , <&keymap_transform_0 2 7>
+                , <&keymap_transform_0 2 8>
+                , <&keymap_transform_0 2 9>
+                , <&keymap_transform_0 2 10>
+                , <&keymap_transform_0 2 11>
+                
+                , <&keymap_transform_0 3 0>  // Row 3
+                , <&keymap_transform_0 3 1>
+                , <&keymap_transform_0 3 2>
+                , <&keymap_transform_0 3 3>
+                , <&keymap_transform_0 3 4>
+                , <&keymap_transform_0 3 5>
+                , <&keymap_transform_0 3 6>
+                , <&keymap_transform_0 3 7>
+                , <&keymap_transform_0 3 8>
+                , <&keymap_transform_0 3 9>
+                , <&keymap_transform_0 3 10>
+                , <&keymap_transform_0 3 11>
+                
+                , <&keymap_transform_0 4 0>  // Row 4 (Thumbs)
+                , <&keymap_transform_0 4 1>
+                , <&keymap_transform_0 4 2>
+                , <&keymap_transform_0 4 3>
+                , <&keymap_transform_0 4 4>
+                , <&keymap_transform_0 4 7>
+                , <&keymap_transform_0 4 8>
+                , <&keymap_transform_0 4 9>
+                , <&keymap_transform_0 4 10>
+                , <&keymap_transform_0 4 11>
+                ;
         };
     };
 
