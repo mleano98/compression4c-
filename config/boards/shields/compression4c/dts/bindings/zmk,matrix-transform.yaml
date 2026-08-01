@@ -1,8 +1,0 @@
-description: Matrix transform definition patch to allow key indexing bindings for ZMK Studio
-compatible: "zmk,matrix-transform"
-include: base.yaml
-properties:
-  "#key-cells":
-    type: int
-    required: true
-    const: 2
