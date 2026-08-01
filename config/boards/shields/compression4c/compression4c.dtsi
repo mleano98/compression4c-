@@ -27,7 +27,6 @@
             transform = <&keymap_transform_0>;
             kscan = <&kscan0>;
             
-            // Uses standard physical layout integer coordinate tokens
             keys
                 = <&keymap_transform_0 0 0>  , <&keymap_transform_0 0 1>  , <&keymap_transform_0 0 2>  , <&keymap_transform_0 0 3>  , <&keymap_transform_0 0 4>  , <&keymap_transform_0 0 5>
                 , <&keymap_transform_0 0 7>  , <&keymap_transform_0 0 8>  , <&keymap_transform_0 0 9>  , <&keymap_transform_0 0 10> , <&keymap_transform_0 0 11> , <&keymap_transform_0 0 12>
@@ -64,3 +63,4 @@
 &pro_micro_i2c {
     status = "disabled";
 };
+
