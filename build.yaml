@@ -1,8 +1,8 @@
 ---
 include:
   - board: nice_nano//zmk
-    shield: 4c_left nice_view_adapter nice_view
+    shield: compression4c_left nice_view_adapter nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano//zmk
-    shield: 4c_right nice_view_adapter nice_view
+    shield: compression4c_right nice_view_adapter nice_view
