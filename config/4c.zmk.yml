@@ -6,14 +6,7 @@ url: "https://github.com"
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
-  - keys
   - display
 siblings:
   - "4c_left"
   - "4c_right"
-layouts:
-  - id: "default_layout"
-    transform: "keymap_transform_0"
-    kscan: "kscan0"
-    keys:
-      - [0, 0]
